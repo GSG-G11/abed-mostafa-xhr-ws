@@ -1,7 +1,4 @@
-**Author**: [@skibinska](https://github.com/skibinska)  
-**Maintainer**: [@skibinska](https://github.com/skibinska)
-
-# XHR workshop (60 minutes)
+# XHR workshop
 
 In this workshop we will build a small web app that allows users to search for GIFs by a word or phrase and gets a list of GIFs. We will use:
 
@@ -12,19 +9,13 @@ When the user has typed in a word or phrase they should be able to trigger the A
 
 ## Giphy API
 
-We're going to explore the [Giphy API](http://api.giphy.com/) (Giphy is an animated GIF search engine) and learn how to read API documentation.
+We're going to explore the [Giphy API](https://developers.giphy.com/) (Giphy is an animated GIF search engine) and learn how to read API documentation.
 
 Most good APIs have detailed docs which you should read to find out exactly what information is available to you. Docs should also help you find out how to build your queries and will often provide sample requests and response objects.
 
 ## Tools
 
-The first thing we want to do is install a couple of tools to make our lives a lot easier.
-
 [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc) is a Chrome extension that will automatically make JSON data much more readable in Chrome.
-
-[Postman](https://www.getpostman.com/) is a native app that we can use to easily make API requests. The Chrome app has been deprecated, make sure you use the native app. Check out the docs and install the app from [here](https://www.getpostman.com/docs/).
-
-[prettyjson](https://www.npmjs.com/package/prettyjson) is a package for formatting JSON data. To install it run in your terminal `npm install -g prettyjson`
 
 ## Getting started
 
@@ -32,7 +23,7 @@ The first thing we want to do is install a couple of tools to make our lives a l
 
 2. Open the API Documentation and follow the **Steps**.
 
-You can find the API Documentation [here](https://developers.giphy.com/docs/).
+You can find the API Documentation [here](https://developers.giphy.com/docs/api).
 
 ## Steps
 
@@ -48,13 +39,7 @@ You can find the API Documentation [here](https://developers.giphy.com/docs/).
 
 - Check your response (via the URL) - see what your JSON looks like
 
-  You can do this in a couple of ways:
-
-- You can access an API in your web browser by popping the url into the address bar
-
-- You can access the API using `curl` by running in your terminal `curl "your-url-here" | prettyjson`
-
-- You can use [Postman](https://www.getpostman.com/docs/)
+- You can access an API in your web browser by popping the url into the address bar.
 
 ### 2. Open index.js
 
@@ -62,15 +47,8 @@ You can find the API Documentation [here](https://developers.giphy.com/docs/).
 
 - Make a request to Giphy with the user input as your search parameter.
 
-If you don't remember how [here](https://github.com/lucymonie/api-workshop/blob/master/03-xmlhttprequest.md)
-is a reminder.
-
 ### 3. Bonus
 
 - Style your website (follow BEM conventions)
 
 - Is there a way to return more/less GIFs? If so, try to implement it!
-
-## Solution
-
-To see my solution check out the `add-solution` branch.
